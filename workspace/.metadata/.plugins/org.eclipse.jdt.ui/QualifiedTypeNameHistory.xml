@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="ex01_xml.Calculator"/>
+<fullyQualifiedTypeName name="ex01_xml.EngineerCalculator"/>
+<fullyQualifiedTypeName name="quiz01.Person"/>
+<fullyQualifiedTypeName name="ex02_xml.Engine"/>
+<fullyQualifiedTypeName name="org.springframework.context.support.AbstractApplicationContext"/>
+<fullyQualifiedTypeName name="org.springframework.context.support.GenericApplicationContext"/>
+<fullyQualifiedTypeName name="org.springframework.context.support.GenericXmlApplicationContext"/>
+<fullyQualifiedTypeName name="quiz02.Calculator"/>
+</qualifiedTypeNameHistroy>

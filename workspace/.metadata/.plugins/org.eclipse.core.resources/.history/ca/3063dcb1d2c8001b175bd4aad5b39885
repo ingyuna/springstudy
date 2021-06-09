@@ -1,0 +1,19 @@
+package quiz01;
+
+public class Car {
+
+	private String model;
+	private int price;
+	
+	// constructor
+	public Car() {
+		
+	}
+	
+	// method
+	public void car1(String model, int price) {
+		System.out.println("현대", 2000000);
+	}
+	
+	
+}
