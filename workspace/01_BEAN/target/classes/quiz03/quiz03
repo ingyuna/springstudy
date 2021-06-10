@@ -1,0 +1,20 @@
+	#quiz03 문제
+	
+	Exam
+		private List<Integer> scores;  // 5개의 점수
+		private double average;  // 평균
+		private char grade;  // A ~ F
+	
+	Student
+		private String name;
+		private int age;
+		private Map<String, String> home;  // 주소, 전화번호
+		private Exam exam;
+	
+	name: david
+	age: 19
+	home's address: seoul
+	home's phone: 010-555-5555
+	scores: [50, 60, 70, 80, 90]
+	average: 70.0
+	grade: C

@@ -20,7 +20,7 @@ public class Car {
 	// method
 	public void info() {
 		System.out.println("자동차모델: " + model);
-		System.out.println("엔진타입: " + engine);
+		engine.info();
 	}
 
 	

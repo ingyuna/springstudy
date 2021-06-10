@@ -4,8 +4,21 @@
 <fullyQualifiedTypeName name="ex01_xml.EngineerCalculator"/>
 <fullyQualifiedTypeName name="quiz01.Person"/>
 <fullyQualifiedTypeName name="ex02_xml.Engine"/>
-<fullyQualifiedTypeName name="org.springframework.context.support.AbstractApplicationContext"/>
 <fullyQualifiedTypeName name="org.springframework.context.support.GenericApplicationContext"/>
-<fullyQualifiedTypeName name="org.springframework.context.support.GenericXmlApplicationContext"/>
 <fullyQualifiedTypeName name="quiz02.Calculator"/>
+<fullyQualifiedTypeName name="quiz02.MultiplicationTable"/>
+<fullyQualifiedTypeName name="ex03_xml.ListBean"/>
+<fullyQualifiedTypeName name="java.util.Set"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="ex03_xml.SetBean"/>
+<fullyQualifiedTypeName name="ex03_xml.MapBean"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.lang.Math"/>
+<fullyQualifiedTypeName name="quiz03.Exam"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="org.springframework.context.support.AbstractApplicationContext"/>
+<fullyQualifiedTypeName name="org.springframework.context.support.GenericXmlApplicationContext"/>
+<fullyQualifiedTypeName name="quiz03.Student"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="java.util.Map.Entry"/>
 </qualifiedTypeNameHistroy>

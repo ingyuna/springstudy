@@ -22,6 +22,7 @@ public class Engine {
 	}
 	
 	
+	// method
 	public void info() {
 		System.out.println("엔진타입: " + type);
 		System.out.println("배기량: " + cc + "cc");
