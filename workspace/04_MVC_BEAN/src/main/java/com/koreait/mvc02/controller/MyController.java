@@ -37,7 +37,7 @@ public class MyController {
 		//    2) suffix : ".jsp", return 뒤에 추가한다.
 		// 2. forward로 이동된다.	(redirect는 redirect라고 적어주기 때문에, 아무것도 안적혀 있으면 forward다)
 		return "index";		// return "/WEB-INF/views/index.jsp";
-									// -> 우리가 했었던 ModelAndView는 여기서 필요 없는거.
+									// -> 우리가 했었던 ModelAndView는 여기서는 필요 없는거.
 	}
 	
 		
