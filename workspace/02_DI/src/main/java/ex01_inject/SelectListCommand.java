@@ -7,6 +7,7 @@ import javax.inject.Inject;
 	1. 객체의 타입(<bean class="'>)이 일치하는 객체를 자동으로 주입한다.
 	2. 필드, 생성자, setter를 대상으로 한다.
 */
+import javax.inject.Named;
 
 
 public class SelectListCommand {
@@ -40,10 +41,18 @@ public class SelectListCommand {
 	// field
 	private Dao dao;
 	
+	// constructor
+	public SelectListCommand() {}
+	
 	// setter
 	@Inject
+	@Named("dao1")	// <bean id="dao1"> 인 bean을 생성하라.
 	public void setDao(Dao dao) {
 		this.dao = dao;
+	}
+	// getter
+	public Dao getDao() {
+		return dao;
 	}
 	
 	public void execute() {
