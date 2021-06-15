@@ -42,7 +42,7 @@ public class MyController5 {
 		people.add(w);
 		people.add(m);
 		
-		model.addAttribute("p", p);
+		model.addAttribute("people", people);
 		
 		return "folder04/view02";
 	}

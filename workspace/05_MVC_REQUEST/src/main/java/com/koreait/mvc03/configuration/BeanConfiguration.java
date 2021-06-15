@@ -27,10 +27,10 @@ public class BeanConfiguration {
 	public Person woman() {
 		Person w = new Person();
 		w.setName("공주");
-		w.setAge(35);
+		w.setAge(25);
 		List<String> hobbies = new ArrayList<String>();
-		hobbies.add("게임");
-		hobbies.add("도박");
+		hobbies.add("네일");
+		hobbies.add("헤어");
 		w.setHobbies(hobbies);
 		return w; 
 	}
