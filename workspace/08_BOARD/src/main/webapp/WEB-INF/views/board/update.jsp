@@ -16,7 +16,7 @@
 </head>
 <body>
 	<h1>${board.no}번 게시글 수정 페이지</h1>
-	<form action="updateBoard.do" method="post">	<%-- 여기서는 post니까 @GetMapping 대신에 @PostMapping(value="") --%>
+	<form id="f" action="updateBoard.do" method="post">	<%-- 여기서는 post니까 @GetMapping 대신에 @PostMapping(value="") --%>
 		제목<br>
 		<input type="text" name="title" value="${board.title}"><br><br>
 		내용<br>

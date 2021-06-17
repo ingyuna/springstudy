@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="quiz01.Calculator"/>
 <fullyQualifiedTypeName name="javax.inject.Inject"/>
 <fullyQualifiedTypeName name="javax.annotation.Resource"/>
 <fullyQualifiedTypeName name="javax.print.attribute.standard.MediaSize.Engineering"/>
@@ -60,4 +59,5 @@
 <fullyQualifiedTypeName name="com.koreait.board01.dto.Board"/>
 <fullyQualifiedTypeName name="java.util.Map"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
+<fullyQualifiedTypeName name="com.koreait.board01.command.BoardViewCommand"/>
 </qualifiedTypeNameHistroy>

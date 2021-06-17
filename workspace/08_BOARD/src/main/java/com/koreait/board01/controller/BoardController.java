@@ -16,7 +16,7 @@ import com.koreait.board01.command.BoardListCommand;
 import com.koreait.board01.command.InsertBoardCommand;
 import com.koreait.board01.command.UpdateBoardCommand;
 
-@Controller
+// @Controller
 public class BoardController {
 
 	// field

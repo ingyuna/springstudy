@@ -93,11 +93,6 @@ public class BoardDAO {
 		}
 	}
 	
-	
-	
-	
-	
-	
 	public Board selectBoardByNo(long no) {
 		Board board = null;
 		try {
@@ -131,11 +126,25 @@ public class BoardDAO {
 			ps.setString(1, board.getTitle());
 			ps.setString(2, board.getContent());
 			ps.setLong(3, board.getNo());
-			ps.execute();			
+			ps.executeUpdate();			
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
 			close(con, ps, null);
+		}
+	}
+	
+	public void deleteBoard(long no) {
+		try {
+			con = dataSource.getConnection();
+			sql = "DELETE FROM BOARD WHERE NO = ?";
+			ps = con.prepareStatement(sql);
+			ps.setLong(1, no);
+			ps.executeUpdate();
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			close(con, ps, rs);
 		}
 	}
 	

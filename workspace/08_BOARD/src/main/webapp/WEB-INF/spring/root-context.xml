@@ -5,4 +5,11 @@
 	
 	<!-- Root Context: defines shared resources visible to all other web components -->
 		
+	<!--  command를 bean으로 등록해 둔다. -->	<!-- 객체이름 만드는거니까 id의 첫글자는 소문자로 -->	
+	<bean id="boardListCommand" class="com.koreait.board01.command.BoardListCommand" /> <!-- boardListCommand에 필드값이 없으니까 담을게 없음. 그래서 자기가 닫는 태그로 닫아줬다. -->
+	<bean id="boardViewCommand" class="com.koreait.board01.command.BoardViewCommand" />
+	<bean id="deleteBoardCommand" class="com.koreait.board01.command.DeleteBoardCommand" />
+	<bean id="insertBoardCommand" class="com.koreait.board01.command.InsertBoardCommand" />
+	<bean id="updateBoardCommand" class="com.koreait.board01.command.UpdateBoardCommand" />
+
 </beans>
