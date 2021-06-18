@@ -58,6 +58,8 @@ public class ContactController {
 		return "contact/list";
 	}
 	
+	
+	
 	@GetMapping(value="insertContactPage.do")
 	public String insertContactPage() {
 		logger.info("insertContactPage() 호출");
