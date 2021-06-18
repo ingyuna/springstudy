@@ -36,7 +36,7 @@ public class BoardDAO {
 	}
 	
 	// method
-	public static BoardDAO getInstance() {
+	public static BoardDAO getInstance() { 
 		if (instance == null) {
 			instance = new BoardDAO();
 		}

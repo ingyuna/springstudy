@@ -4,6 +4,7 @@ import javax.servlet.http.HttpServletRequest;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -64,6 +65,7 @@ public class BoardController2 {
 	private DeleteBoardCommand deleteBoardCommand;
 	private UpdateBoardCommand updateBoardCommand;
 	
+	@Autowired
 	public void setCommand(BoardListCommand boardListCommand,  
 						   BoardViewCommand boardViewCommand,
 						   InsertBoardCommand insertBoardCommand,
@@ -122,7 +124,7 @@ public class BoardController2 {
 		boardViewCommand.execute(model);
 		return "board/view";
 	}
-	
+
 	
 	@PostMapping(value="updateBoardPage.do")
 	public String updatePage(@ModelAttribute Board board) {
@@ -130,7 +132,23 @@ public class BoardController2 {
 		return "board/update";
 	}
 	
+	@PostMapping(value="updateBoard.do")
+	public String updateBoard(Board board,
+							  Model model) {
+		logger.info("updateBoard() 호출");
+		model.addAttribute("board", board);
+		updateBoardCommand.execute(model);
+		return "redirect:selectBoardByNo.do?no=" + board.getNo();
+	}
 	
+	@GetMapping(value="deleteBoard.do")
+	public String deleteBoard(@RequestParam("no") long no,
+							  Model model) {
+		logger.info("deleteBoard() 호출");
+		model.addAttribute("no", no);
+		deleteBoardCommand.execute(model);
+		return "redirect:selectBoardList.do";
+	}
 	
 	
 	
