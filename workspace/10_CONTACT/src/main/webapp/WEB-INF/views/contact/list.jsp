@@ -8,10 +8,7 @@
 	<title>Insert title here</title>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 	<script>
-		$(document).ready(function(){
-			
-		})
-	
+		
 	
 	</script>
 	<link rel="stylesheet" href="resources/assets/css/style.css">
@@ -38,7 +35,7 @@
 					<c:forEach var="contact" items="${list}">
 						<tr>
 							<td>${contact.no}</td>
-							<td><a href="selectBoardByNo.do?no=${contact.no}">${contact.name}</a></td>
+							<td><a href="selectContactView.do?no=${contact.no}">${contact.name}</a></td>
 							<td>${contact.tel}</td>
 							<td>${contact.addr}</td>
 							<td>${contact.email}</td>
