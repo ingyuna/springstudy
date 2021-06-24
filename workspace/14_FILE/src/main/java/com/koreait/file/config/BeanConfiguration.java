@@ -9,10 +9,12 @@ import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 
+import com.koreait.file.command.DeleteBoardCommand;
 import com.koreait.file.command.DownloadCommand;
 import com.koreait.file.command.InsertBoardCommand;
 import com.koreait.file.command.SelectBoardListCommand;
 import com.koreait.file.command.SelectBoardViewCommand;
+import com.koreait.file.command.UpdateBoardCommand;
 
 @Configuration
 public class BeanConfiguration {
@@ -62,8 +64,18 @@ public class BeanConfiguration {
     }
     
     @Bean
-    public SelectBoardViewCommand selectBoardViewCommand() {
+    public SelectBoardViewCommand SelectBoardViewCommand() {
     	return new SelectBoardViewCommand();
+    }
+    
+    @Bean
+    public UpdateBoardCommand updateBoardCommand() {
+    	return new UpdateBoardCommand();
+    }
+    
+    @Bean
+    public DeleteBoardCommand deleteBoardCommand() {
+    	return new DeleteBoardCommand();
     }
 	
 }

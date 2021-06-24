@@ -17,17 +17,25 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		VALUES (BOARD_SEQ.NEXTVAL, #{param1}, #{param2}, #{param3}, #{param4}, SYSDATE)
 	</insert>
 	
-	<select id="selectBoardList" resultType="com.koreait.file.dto.Board">
-		SELECT NO, WRITER, TITLE, CONTENT, FILENAME, POSTDATE
-		  FROM BOARD
-		 ORDER BY NO DESC
-	</select>
-	
 	<!-- WHERE NO = #{no}라고 해도 된다. -->
 	<select id="selectBoardByNo" resultType="com.koreait.file.dto.Board">
 		SELECT NO, WRITER, TITLE, CONTENT, FILENAME, POSTDATE
 		  FROM BOARD
 		 WHERE NO = #{param1}
 	</select>
+
+	<update id="updateBoard">
+		UPDATE BOARD
+		   SET TITLE = #{param1}
+		     , CONTENT = #{param2}
+		     , FILENAME = #{param3}
+		 WHERE NO = #{param4}
+	</update>
+	
+	<delete id="deleteBoard">
+		DELETE 
+		  FROM BOARD 
+		 WHERE NO = #{param1}
+	</delete>
 
 </mapper>
