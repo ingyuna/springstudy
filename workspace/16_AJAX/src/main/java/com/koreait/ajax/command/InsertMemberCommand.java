@@ -8,6 +8,7 @@ import java.util.Map;
 import javax.servlet.http.HttpServletResponse;
 
 import org.apache.ibatis.session.SqlSession;
+import org.springframework.dao.DuplicateKeyException;
 import org.springframework.ui.Model;
 
 import com.koreait.ajax.dao.MemberDAO;
@@ -33,8 +34,10 @@ public class InsertMemberCommand implements MemberCommand {
 			resultMap = new HashMap<String, Object>();
 			resultMap.put("result", result);
 			
-		} catch (SQLIntegrityConstraintViolationException e) {	// 키 위반 (아이디 중복으로 인한 위반)
+		} catch (DuplicateKeyException e) {	// 키 위반 (아이디 중복으로 인한 위반)
 			try {
+				// 타입을 모를 경우 -> response.setCharacterEncoding("utf-8"); 간단한 인코딩이라도 이렇게 해주기
+				response.setContentType("text/html; charset=utf-8");
 				response.setStatus(1001);
 				response.getWriter().println("이미 사용 중인 아이디입니다.");				
 			} catch (IOException e2) {
