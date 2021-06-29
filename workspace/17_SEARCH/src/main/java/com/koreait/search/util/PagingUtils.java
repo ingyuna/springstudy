@@ -4,8 +4,9 @@ import com.koreait.search.dto.Page;
 
 public class PagingUtils {
 
-	// field
+	// field (2번 쓰지 않도록 field로 빼서 옮겨준다)
 	public static int recordPerPage = 5;
+	public static int pagePerBlock = 3;
 		
 	// ajax 사용
 	public static Page getPage(int totalRecord, int page) {
@@ -15,7 +16,6 @@ public class PagingUtils {
 		endRecord = endRecord < totalRecord ? endRecord : totalRecord;
 		
 		int totalPage = (totalRecord / recordPerPage) + (totalRecord % recordPerPage > 0 ? 1 : 0);
-		int pagePerBlock = 3;
 		int beginPage = ((page -1) / pagePerBlock) * pagePerBlock + 1;
 		int endPage = beginPage + pagePerBlock - 1;
 		endPage = endPage < totalPage ? endPage : totalPage;
