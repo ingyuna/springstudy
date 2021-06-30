@@ -7,6 +7,9 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 
+import com.koreait.search.command.AutoCompleteCommand;
+import com.koreait.search.command.SearchAllCommand;
+import com.koreait.search.command.SearchQueryCommand;
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 
@@ -23,7 +26,7 @@ public class BeanConfiguration {
 		return hikariConfig;
 	}
 	
-	@Bean
+	@Bean(destroyMethod="close")
 	public HikariDataSource hikariDataSource() {
 		return new HikariDataSource(hikariConfig());
 	}
@@ -41,5 +44,19 @@ public class BeanConfiguration {
 		  return new SqlSessionTemplate(sqlSessionFactory());
 	   }
 	 
+	 @Bean
+	 public SearchAllCommand searchAllCommand() {
+		 return new SearchAllCommand();
+	 }
+	 
+	 @Bean
+	 public AutoCompleteCommand autoCompleteCommand() {
+		 return new AutoCompleteCommand();
+	 }
+	 
+	 @Bean
+	 public SearchQueryCommand searchQueryCommand() {
+		 return new SearchQueryCommand();
+	 }
 	
 }
