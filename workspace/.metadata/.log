@@ -4893,3 +4893,105 @@ Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING
 	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
 	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:213)
 	... 9 more
+
+!ENTRY org.eclipse.jface.text 2 0 2021-07-01 09:30:23.819
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2021-07-01 09:30:23.820
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2021-07-01 09:31:11.638
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2021-07-01 09:31:11.638
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2021-07-01 09:31:12.480
+!MESSAGE org.eclipse.recommenders:index::zip:0.0.0 could not be resolved from the model repositories. Are you offline?
+
+!ENTRY org.eclipse.jface.text 2 0 2021-07-01 09:37:35.642
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2021-07-01 09:37:35.642
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2021-07-01 09:39:19.458
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2021-07-01 09:39:19.458
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2021-07-01 10:02:45.374
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2021-07-01 10:02:45.374
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2021-07-01 11:06:03.502
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2021-07-01 11:06:03.502
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2021-07-01 13:44:26.582
+!MESSAGE Publishing failed with multiple errors
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2021-07-01 13:44:26.582
+!MESSAGE Could not delete C:\spring0303\springstudy\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\IntegrationProject\WEB-INF\lib\asm-3.3.1.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2021-07-01 13:44:26.582
+!MESSAGE Could not delete C:\spring0303\springstudy\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\IntegrationProject\WEB-INF\lib\aspectjrt-1.9.2.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2021-07-01 13:44:26.582
+!MESSAGE Could not delete C:\spring0303\springstudy\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\IntegrationProject\WEB-INF\lib\c3p0-0.9.5.2.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2021-07-01 13:44:26.582
+!MESSAGE Could not delete C:\spring0303\springstudy\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\IntegrationProject\WEB-INF\lib\cglib-2.2.2.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2021-07-01 13:44:26.582
+!MESSAGE Could not delete C:\spring0303\springstudy\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\IntegrationProject\WEB-INF\lib\HikariCP-3.3.0.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2021-07-01 13:44:26.582
+!MESSAGE Could not delete C:\spring0303\springstudy\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\IntegrationProject\WEB-INF\lib\HikariCP-java6-2.3.13.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2021-07-01 13:44:26.582
+!MESSAGE Could not delete C:\spring0303\springstudy\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\IntegrationProject\WEB-INF\lib\jackson-annotations-2.9.0.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2021-07-01 13:44:26.582
+!MESSAGE Could not delete C:\spring0303\springstudy\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\IntegrationProject\WEB-INF\lib\jackson-core-2.9.4.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2021-07-01 13:44:26.582
+!MESSAGE Could not delete C:\spring0303\springstudy\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\IntegrationProject\WEB-INF\lib\jackson-databind-2.9.4.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2021-07-01 13:44:26.582
+!MESSAGE Could not delete C:\spring0303\springstudy\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\IntegrationProject\WEB-INF\lib\javax.inject-1.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2021-07-01 13:44:26.582
+!MESSAGE Could not delete C:\spring0303\springstudy\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\IntegrationProject\WEB-INF\lib\jcl-over-slf4j-1.7.25.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2021-07-01 13:44:26.582
+!MESSAGE Could not delete C:\spring0303\springstudy\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\IntegrationProject\WEB-INF\lib\json-20180813.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2021-07-01 13:44:26.582
+!MESSAGE Could not delete C:\spring0303\springstudy\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\IntegrationProject\WEB-INF\lib\jstl-1.2.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2021-07-01 13:44:26.582
+!MESSAGE Could not delete C:\spring0303\springstudy\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\IntegrationProject\WEB-INF\lib\log4j-1.2.15.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2021-07-01 13:44:26.582
+!MESSAGE Could not delete C:\spring0303\springstudy\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\IntegrationProject\WEB-INF\lib\mchange-commons-java-0.2.11.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2021-07-01 13:44:26.582
+!MESSAGE Could not delete C:\spring0303\springstudy\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\IntegrationProject\WEB-INF\lib\mybatis-3.4.6.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2021-07-01 13:44:26.582
+!MESSAGE Could not delete C:\spring0303\springstudy\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\IntegrationProject\WEB-INF\lib\mybatis-spring-1.3.2.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2021-07-01 13:44:26.582
+!MESSAGE Could not delete C:\spring0303\springstudy\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\IntegrationProject\WEB-INF\lib\quartz-2.3.0.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2021-07-01 13:44:26.582
+!MESSAGE Could not delete C:\spring0303\springstudy\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\IntegrationProject\WEB-INF\lib\slf4j-api-1.7.25.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2021-07-01 13:44:26.582
+!MESSAGE Could not delete C:\spring0303\springstudy\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\IntegrationProject\WEB-INF\lib\slf4j-log4j12-1.7.25.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2021-07-01 13:44:26.582
+!MESSAGE Could not delete C:\spring0303\springstudy\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\IntegrationProject\WEB-INF\lib\spring-aop-5.1.4.RELEASE.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2021-07-01 13:44:26.582
+!MESSAGE Could not delete C:\spring0303\springstudy\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\IntegrationProject\WEB-INF\lib\spring-beans-5.1.4.RELEASE.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2021-07-01 13:44:26.582
+!MESSAGE Could not delete C:\spring0303\springstudy\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\IntegrationProject\WEB-INF\lib\spring-context-5.1.4.RELEASE.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2021-07-01 13:44:26.582
+!MESSAGE Could not delete C:\spring0303\springstudy\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\IntegrationProject\WEB-INF\lib\spring-core-5.1.4.RELEASE.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2021-07-01 13:44:26.582
+!MESSAGE Could not delete C:\spring0303\springstudy\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\IntegrationProject\WEB-INF\lib\spring-expression-5.1.4.RELEASE.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2021-07-01 13:44:26.582
+!MESSAGE Could not delete C:\spring0303\springstudy\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\IntegrationProject\WEB-INF\lib\spring-jcl-5.1.4.RELEASE.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2021-07-01 13:44:26.582
+!MESSAGE Could not delete C:\spring0303\springstudy\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\IntegrationProject\WEB-INF\lib\spring-jdbc-5.1.4.RELEASE.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2021-07-01 13:44:26.582
+!MESSAGE Could not delete C:\spring0303\springstudy\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\IntegrationProject\WEB-INF\lib\spring-tx-5.1.4.RELEASE.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2021-07-01 13:44:26.582
+!MESSAGE Could not delete C:\spring0303\springstudy\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\IntegrationProject\WEB-INF\lib\spring-web-5.1.4.RELEASE.jar. May be locked by another process.
+!SUBENTRY 1 org.eclipse.wst.server.core 4 0 2021-07-01 13:44:26.582
+!MESSAGE Could not delete C:\spring0303\springstudy\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\IntegrationProject\WEB-INF\lib\spring-webmvc-5.1.4.RELEASE.jar. May be locked by another process.
