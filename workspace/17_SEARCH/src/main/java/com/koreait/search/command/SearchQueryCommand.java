@@ -48,7 +48,7 @@ public class SearchQueryCommand implements SearchCommand {
 		List<Employees> list = searchDAO.search(queryDTO);
 		String paging = null;
 		if (column.equals("SALARY")) {
-			paging = PagingUtils.getPaging("search.do?column=" + column + "&bottom=" + bottom + "&top=" + top, query, page);			
+			// paging = PagingUtils.getPaging("search.do?column=" + column + "&bottom=" + bottom + "&top=" + top, query, page);			
 		} else {
 			paging = PagingUtils.getPaging("search.do?column=" + column + "&query=" + query, page);		
 		}
