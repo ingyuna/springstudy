@@ -45,7 +45,7 @@
 					data: $('#f').serialize(),		
 										// $('#f').serialize() = form의 모든 요소를 파라미터로 나열해서 보내주겠다.
 					success: function(resultMap) {
-						alert(resultMap.massage);
+						alert(resultMap.message);
 						fn_listTable(resultMap.status, resultMap.list);
 					}
 				});
