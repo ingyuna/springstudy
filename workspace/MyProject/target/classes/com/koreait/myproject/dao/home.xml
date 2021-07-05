@@ -3,9 +3,20 @@
 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 
-<mapper namespace="com.koreait.myproject.dao.HomeDAO">
+<!-- MyBatis 방식 -->
+<mapper namespace="com.koreait.myproject.dao.home">
 
+	<insert id="join">
+		INSERT INTO MEMBER
+		VALUES (MEMBER_SEQ.NEXTVAL, #{id}, #{pw}, #{name}, #{phone}, #{email}, #{address}, SYSDATE, 0)
+	</insert>
 
+	<select id="login" resultType="com.koreait.myproject.dto.Member">
+		SELECT NO, ID, PW, NAME, PHONE, EMAIL, ADDRESS, REGDATE, STATE
+		  FROM MEMBER
+		 WHERE ID = #{id}
+		   AND PW = #{pw}
+	</select>
 
 
 </mapper>

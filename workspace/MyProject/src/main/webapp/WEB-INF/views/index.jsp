@@ -15,6 +15,7 @@
 	<style>			
 		body {
 			margin: 0 auto;
+			background-color: #FEEEF5
 		}		
 		.outer {
 			width: 700px;
@@ -31,9 +32,7 @@
 			padding: 30px;
 			border-top: 1px solid gray;
 		}
-		ul:hover {
-			color: orange;
-		}		
+			
 		ul > li:nth-of-type(1) {
 			padding-right: 70px;
 		}		
@@ -46,6 +45,18 @@
 		
 		li > a {
 			text-decoration: none;
+			font-weight: 600;
+			color: #FF3C91;
+		}
+		
+		a:hover {
+			color: white;
+			background-color: #FFD2EE;
+			border-radius: 3px;
+		}
+		
+		.welcome_font {
+			text-align: right;
 		}
 		
 	
@@ -54,12 +65,21 @@
 <body>
 	<div class="outer">		
 		<header>				
-				<h1>My Home</h1>					
+				<h1>My Home</h1>
+				<c:if test="${loginUser != null}">
+					<p class="welcome_font">${loginUser.name}님 환영합니다♥</p>
+				</c:if>					
 			<nav>
 				<ul>
 					<li><a href="#">갤러리 게시판</a></li>
 					<li><a href="#">자유 게시판</a></li>
-					<li><a href="loginPage.do">로그인</a></li>			
+					
+					<c:if test="${loginUser == null}">
+						<li><a href="loginPage.do">로그인</a></li>						
+					</c:if>				
+					<c:if test="${loginUser != null}">
+						<li><a href="logout.do">로그아웃</a></li>	
+					</c:if>
 				</ul>
 			</nav>		
 		</header>

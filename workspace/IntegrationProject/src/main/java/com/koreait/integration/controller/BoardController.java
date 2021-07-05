@@ -29,7 +29,7 @@ public class BoardController {
 	
 	@GetMapping(value = "selectAll.do", produces="application/json; charset=utf-8") // 받아주는게 json이다 하면 이렇게 produces를 추가해준다.
 	@ResponseBody
-	public Map<String, Object> selectAll() {		// status를 int로 받기로 했으니까 다양하게 쓸 수 있는 Object로 한다..
+	public Map<String, Object> selectAll() {		// status를 int로 받기로 했으니까 다양하게 쓸 수 있는 Object로 한다.
 		List<Board> list = boardService.totalList();
 		Map<String, Object> resultMap  = new HashMap<String, Object>(); // 위에 list를 받아서 반환해야 하니까 새로운 map을 만들어준다.
 		if (list.size() == 0) {		// 목록이 없을 때

@@ -10,6 +10,7 @@
 		 
 		 $(document).ready(function(){
 			fn_verify_num(); 
+			fn_join();
 		 });
 		 
 		 
@@ -21,20 +22,20 @@
 					 $('#email').focus();
 					 return false;
 				 }
-			 });
-			 $.ajax({
-				 url: 'verifyNum.do',
-				 type: 'get',
-				 data: 'email=' + $('#email').val(),
-				 dataType: 'json',
-				 success: function(resultMap) {
-					 alert('인증코드가 발송되었습니다.');
-					 fn_verify(resultMap.authCode);
-				 },
-				 error: function(xhr, textStatus, errorThrown) {
-					 
-				 }
-			 })		 
+				 $.ajax({
+					 url: 'verifyNum.do',
+					 type: 'get',
+					 data: 'email=' + $('#email').val(),
+					 dataType: 'json',
+					 success: function(resultMap) {
+						 alert('인증코드가 발송되었습니다.');
+						 fn_verify(resultMap.authCode);
+					 },
+					 error: function(xhr, textStatus, errorThrown) {
+						 
+					 }
+				 })		 
+		 	});
 		 }
 		 
 		 // 이메일 인증번호 확인
@@ -51,6 +52,20 @@
 			 });
 		 }
 		 
+		 // 회원 가입
+		 function fn_join() {
+			 $('#join_btn').click(function(){
+				 if ( !authPass ) {
+					 alert('이메일 인증을 받아야 합니다.');
+				 } else {
+					 $('#f').attr('action', 'join.do');
+					 $('#f').submit();
+					 alert('가입이 완료되었습니다.')
+				 }
+			 });
+		 }
+		 
+		 
 	 
 	 
 	</script>
@@ -59,12 +74,12 @@
 	<style>
 		body {
 			margin: 0 auto;
+			background-color: #FEEEF5
 		}		
 		.outer {
 			width: 700px;
 			margin: 0 auto;
 			padding: 50px;
-			border: 1px solid red;
 			text-align: center;
 		}		
 		
@@ -92,10 +107,8 @@
 		.join_btn:hover {
 			cursor: pointer;
 			background-color: orange;
-			
 		}
-		
-		
+
 		
 	</style>
 </head>
@@ -104,7 +117,7 @@
 	
 		<h2>회원가입</h2>	
 				
-		<form method="post">
+		<form id="f" method="post">
 			
 			<div class="join_form">
 				<label>아이디</label>
@@ -142,11 +155,12 @@
 			<label>주소</label>
 			<input type="text" name="address" class="int"> 
 			</div>
+
+			<div class="join_bottom">
+				<input type="button" value="가입하기" id="join_btn">			
+			</div>
 		</form>
 		
-		<div class="join_bottom">
-			<button class="join_btn">가입하기</button>			
-		</div>
 		
 	</div>
 	

@@ -8,6 +8,10 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
+import com.koreait.myproject.command.EmailAuthCommand;
+import com.koreait.myproject.command.JoinCommand;
+import com.koreait.myproject.command.LoginCommand;
+
 @Configuration
 public class BeanConfiguration {
 
@@ -31,5 +35,20 @@ public class BeanConfiguration {
 	public SqlSessionTemplate sqlSession() throws Exception {
  		return new SqlSessionTemplate(sqlSessionFactory());
 	}	
+	
+	@Bean
+	public EmailAuthCommand emailAuthCommand() {
+		return new EmailAuthCommand();
+	}
+	
+	@Bean
+	public JoinCommand joinCommand() {
+		return new JoinCommand();
+	}
+	
+	@Bean
+	public LoginCommand loginCommand() {
+		return new LoginCommand();
+	}
 	
 }

@@ -53,7 +53,7 @@
 	</c:if>
 	
 	<c:if test="${loginUser == null}">		<!-- 로그인 못했을 때 -->
-		<form action="login.do" method="post">
+		<form id="f" action="login.do" method="post">
 			아이디<br>
 			<input type="text" name="id" id="id"><br><br>
 			비밀번호<br>

@@ -6,19 +6,35 @@
 	<meta charset="UTF-8">
 	<title>Login</title>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />	
+	
 	<script>
+	$(document).ready(function(){
+		fn_login();
+	})
+	
+	// 로그인
+	function fn_login() {
+		$('#f').submit(function(event){
+			if ($('#id').val() == '' || $('pw').val() == '') {
+				alert('아이디와 비밀번호는 필수입니다.');
+				event.preventDefault();
+				return false;
+			} 
+		})
+	}
 	
 	
 	</script>
 	<style>
 		body {
 			margin: 0 auto;
+			background-color: #FEEEF5
 		}		
 		.outer {
 			width: 700px;
 			margin: 0 auto;
 			padding: 150px;
-			border: 1px solid red;
 		}		
 		h2 {
 			text-align: center;		
@@ -52,6 +68,17 @@
 			position: absolute;
 		}
 		
+		.login_btn {
+			border: none;
+			background-color: #FEEEF5;
+		}
+		
+		.login_btn:hover {
+			color: #B152FB;
+			cursor: pointer;
+		}
+		
+		
 		.find_click {
 			top: 10px;
 			left: 20px;
@@ -64,6 +91,7 @@
 		
 		
 		
+		
 	
 	</style>
 	
@@ -73,7 +101,7 @@
 	<div class="outer">
 		<h2>로그인</h2>
 		<div class="login">
-			<form id="f" method="post">
+			<form id="f" action="login.do" method="post">
 					<div class="login_box">
 						<label>아이디</label>
 						<input type="text" class="int" name="id" id="id"><br>
@@ -81,7 +109,8 @@
 					<div class="login_box">			
 						<label>비밀번호</label>
 						<input type="password"  class="int" name="pw" id="pw">
-					</div>			
+					</div>	
+					<button class="login_btn">login<i class="far fa-hand-point-up fa-2x"></i></button>		
 			</form>
 		</div>
 		<div class="login_bottom">
