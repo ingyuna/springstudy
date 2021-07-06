@@ -10,7 +10,7 @@
 	<script>
 		$(document).ready(function(){
 		
-		}
+		});
 	
 	</script>
 </head>
@@ -23,14 +23,11 @@
 		<a href="findIdPage.do">아이디 찾기</a>
 	</c:if>
 	<c:if test="${findUser != null}">
-		아이디 : ${findUser.id.substring{0, 3)}<br>
+		아이디 : ${findUser.id.substring(0, 3)}<br>
 		아이디 : ${findUser.id}<br>
 		가입일 : ${findUser.regdate}<br><br>
 		<input type="button" value="로그인하러 가기" onclick="location.href='index.do'">
-	
 	</c:if>
-	
-	<input type="button" value="로그인하러 가기" onclick="location.href='index.do'">
 	
 </body>
 </html>

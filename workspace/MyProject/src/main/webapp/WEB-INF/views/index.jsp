@@ -9,6 +9,17 @@
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 	<script>
 	
+		$(document).ready(function(){
+			fn_leave();
+		});
+		
+		function fn_leave() {
+			$('#leave_link').click(function(){
+				if (confirm('정말 탈퇴하시겠습니까?')) {
+					location.href='leave.do';
+				}
+			});
+		}
 	
 	</script>
 	
@@ -49,7 +60,21 @@
 			color: #FF3C91;
 		}
 		
-		a:hover {
+		.leave_box {
+			width: 100%;
+			text-align: right;
+			
+		}
+		.leave_box > a {
+			text-decoration: none;
+			color: orange;
+		}
+		
+		#leave_link:hover {
+			cursor: pointer;
+		}		
+		
+		li > a:hover {
 			color: white;
 			background-color: #FFD2EE;
 			border-radius: 3px;
@@ -68,12 +93,12 @@
 				<h1>My Home</h1>
 				<c:if test="${loginUser != null}">
 					<p class="welcome_font">${loginUser.name}님 환영합니다♥</p>
+					<div class="leave_box"><a id="leave_link">탈퇴하기</a></div>
 				</c:if>					
 			<nav>
 				<ul>
 					<li><a href="#">갤러리 게시판</a></li>
-					<li><a href="#">자유 게시판</a></li>
-					
+					<li><a href="#">자유 게시판</a></li>				
 					<c:if test="${loginUser == null}">
 						<li><a href="loginPage.do">로그인</a></li>						
 					</c:if>				

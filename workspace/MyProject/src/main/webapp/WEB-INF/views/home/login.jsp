@@ -31,6 +31,16 @@
 			margin: 0 auto;
 			background-color: #FEEEF5
 		}		
+		
+		.home_icon {
+			width: 85%;
+			text-align: right;
+			padding: 20px;
+		}
+		
+		.home_icon > a {
+			color: #6FF3A4;
+		}
 		.outer {
 			width: 700px;
 			margin: 0 auto;
@@ -97,8 +107,13 @@
 	
 </head>
 <body>
-
+	
 	<div class="outer">
+		<%-- home 아이콘 --%>
+		<div class="home_icon">
+			<a href="index.do">Home<i class="fas fa-home fa-2x"></i></a>	
+		</div>
+		
 		<h2>로그인</h2>
 		<div class="login">
 			<form id="f" action="login.do" method="post">
@@ -115,8 +130,8 @@
 		</div>
 		<div class="login_bottom">
 			<div class="find_click">
-				<a href="#">아이디 찾기</a>&nbsp;&nbsp;
-				<a href="#">비밀번호 찾기</a>		
+				<a href="findIdPage.do">아이디 찾기</a>&nbsp;&nbsp;
+				<a href="findPwPage.do">비밀번호 찾기</a>		
 			</div>
 			<div class="join_click">
 				<a href="joinPage.do">회원가입</a>

@@ -62,7 +62,7 @@
 					.append( $('<td>').text(board.writer) )
 					.append( $('<td>').text(board.title) )
 					.append( $('<td>').text(board.content) )
-					.append( $('<td>').text(board.postdate) )
+					.append( $('<td>').text(board.regdate) )
 					.appendTo('#list');
 				});
 			} else if (status == 500) {
@@ -72,7 +72,7 @@
 			}
 		}		
 		
-	</script         >
+	</script>
 </head>
 <body>
 

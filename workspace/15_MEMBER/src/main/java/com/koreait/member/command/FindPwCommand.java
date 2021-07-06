@@ -21,6 +21,7 @@ public class FindPwCommand implements MemberCommand {
 		
 		String pw = request.getParameter("pw");
 		String email = request.getParameter("email");
+		String id = request.getParameter("id");
 		
 		Member member = new Member();
 		member.setPw(SecurityUtils.encodeBase64(pw));

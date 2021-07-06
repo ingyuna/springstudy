@@ -9,8 +9,12 @@ import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
 import com.koreait.myproject.command.EmailAuthCommand;
+import com.koreait.myproject.command.FindIdCommand;
+import com.koreait.myproject.command.FindPwCommand;
 import com.koreait.myproject.command.JoinCommand;
+import com.koreait.myproject.command.LeaveCommand;
 import com.koreait.myproject.command.LoginCommand;
+import com.koreait.myproject.command.LogoutCommand;
 
 @Configuration
 public class BeanConfiguration {
@@ -49,6 +53,26 @@ public class BeanConfiguration {
 	@Bean
 	public LoginCommand loginCommand() {
 		return new LoginCommand();
+	}
+	
+	@Bean
+	public LogoutCommand logoutCommand() {
+		return new LogoutCommand();
+	}
+	
+	@Bean
+	public FindIdCommand findIdCommand() {
+		return new FindIdCommand();
+	}
+	
+	@Bean
+	public FindPwCommand findPwCommand() {
+		return new FindPwCommand();
+	}
+	
+	@Bean
+	public LeaveCommand leaveCommand() {
+		return new LeaveCommand();
 	}
 	
 }
