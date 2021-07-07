@@ -2,7 +2,6 @@ package com.koreait.myproject.controller;
 
 import java.util.Map;
 
-import javax.print.attribute.standard.JobImpressionsCompleted;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
@@ -16,14 +15,19 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.multipart.MultipartHttpServletRequest;
 
 import com.koreait.myproject.command.EmailAuthCommand;
 import com.koreait.myproject.command.FindIdCommand;
 import com.koreait.myproject.command.FindPwCommand;
+import com.koreait.myproject.command.InsertGalleryBoardCommand;
 import com.koreait.myproject.command.JoinCommand;
 import com.koreait.myproject.command.LeaveCommand;
 import com.koreait.myproject.command.LoginCommand;
 import com.koreait.myproject.command.LogoutCommand;
+import com.koreait.myproject.command.SelectBoardViewCommand;
+import com.koreait.myproject.command.SelectGalleryBoardListCommand;
+import com.koreait.myproject.command.UpdateGalleryBoardCommand;
 
 @Controller
 public class HomeController {
@@ -38,6 +42,10 @@ public class HomeController {
 	private FindIdCommand findIdCommand;
 	private FindPwCommand findPwCommand;
 	private LeaveCommand leaveCommand;
+	private InsertGalleryBoardCommand insertGalleryBoardCommand;
+	private SelectGalleryBoardListCommand selectGalleryBoardListCommand;
+	private SelectBoardViewCommand selectBoardViewCommand;
+	private UpdateGalleryBoardCommand updateGalleryBoardCommand;
 	
 	// constructor
 	@Autowired
@@ -48,7 +56,11 @@ public class HomeController {
 						  LogoutCommand logoutCommand,
 						  FindIdCommand findIdCommand,
 						  FindPwCommand findPwCommand,
-						  LeaveCommand leaveCommand) {
+						  LeaveCommand leaveCommand,
+						  InsertGalleryBoardCommand insertGalleryBoardCommand,
+						  SelectGalleryBoardListCommand selectGalleryBoardListCommand,
+						  SelectBoardViewCommand selectBoardViewCommand,
+						  UpdateGalleryBoardCommand updateGalleryBoardCommand) {
 		super();
 		this.sqlSession = sqlSession;
 		this.emailAuthCommand = emailAuthCommand;
@@ -58,6 +70,10 @@ public class HomeController {
 		this.findIdCommand = findIdCommand;
 		this.findPwCommand = findPwCommand;
 		this.leaveCommand = leaveCommand;
+		this.insertGalleryBoardCommand = insertGalleryBoardCommand;
+		this.selectGalleryBoardListCommand = selectGalleryBoardListCommand;
+		this.selectBoardViewCommand = selectBoardViewCommand;
+		this.updateGalleryBoardCommand = updateGalleryBoardCommand;
 	}
 	
 	@GetMapping(value= {"/", "index.do"})
@@ -148,6 +164,52 @@ public class HomeController {
 		return "redirect:/";
 	}
 	
+	@GetMapping(value="galleryBoardPage.do")
+	public String galleryBoardPage() {
+		return "home/galleryBoard";
+	}
+	
+	@GetMapping(value="insertGalleryBoardPage.do")
+	public String insertGalleryBoardPage() {
+		return "home/insertGalleryBoard";
+	}
+	
+	@PostMapping(value="insertGalleryBoard.do")
+	public String insertGalleryBoard(MultipartHttpServletRequest multipartRequest,
+									 Model model) {
+		model.addAttribute("multipartRequest", multipartRequest);
+		insertGalleryBoardCommand.execute(sqlSession, model);
+		return "redirect:galleryBoardPage.do";
+		
+	}
+	
+	
+	
+	@GetMapping(value="selectGalleryBoardList.do")
+	public String selectGalleryBoardList(Model model) {
+		selectGalleryBoardListCommand.execute(sqlSession, model);
+		return "home/galleryBoard";
+	}
+	
+	
+	
+	
+		
+	@GetMapping(value="selectBoardByNo.do")
+	public String selectBoardByNo(HttpServletRequest request,
+								  Model model) {
+		model.addAttribute("request", request);
+		selectBoardViewCommand.execute(sqlSession, model);
+		return "home/viewBoard";
+	}
+	
+	@PostMapping(value="updateBoard.do")
+	public String updateBoard(MultipartHttpServletRequest multipartRequest,
+							  Model model) {
+		model.addAttribute("multipartRequest", multipartRequest);
+		updateGalleryBoardCommand.execute(sqlSession, model);
+		return "redirect:selectBoardByNo.do?no=" + multipartRequest.getParameter("no");
+	}
 	
 	
 	

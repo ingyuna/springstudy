@@ -7,6 +7,7 @@
 	<title>Insert title here</title>
 </head>
 <body>
+
 	<h1>게시글 작성 화면</h1>
 	
 	<form action="insertBoard.do" 

@@ -36,6 +36,38 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 		  SET STATE = #{state}
 		WHERE NO = #{no}
 	</update>
+	
+	<insert id="insertGalleryBoard">
+		INSERT INTO GALLERY_BOARD
+		VALUES (GALLERY_BOARD_SEQ.NEXTVAL, #{param1}, #{param2}, #{param3}, SYSDATE, SYSDATE, #{param4}, 0, #{param5})
+	</insert>
+	
+	<select id="selectGalleryBoardList" resultType="com.koreait.myproject.dto.GalleryBoard">
+		SELECT NO, ID, TITLE, CONTENT, POSTDATE, LASTMODIFIED, IP, HIT, FILENAME
+		  FROM GALLERY_BOARD
+		 ORDER BY NO DESC
+	</select>
+	
+	
+	<select id="selectBoardByNo" resultType="com.koreait.myproject.dto.GalleryBoard">
+		SELECT NO, ID, TITLE, CONTENT, POSTDATE, LASTMODIFIED, IP, HIT, FILENAME
+		  FROM GALLERY_BOARD
+		 WHERE NO = #{param1}
+	</select>
+
+	<update id="updateBoard">
+		UPDATE GALLERY_BOARD
+		   SET TITLE = #{param1}
+		     , CONTENT = #{param2}
+		     , FILENAME = #{param3}
+		 WHERE NO = #{param4}
+	</update>
+	
+	<delete id="deleteBoard">
+		DELETE 
+		  FROM GALLERY_BOARD
+		 WHERE NO = #{param1}
+	</delete>
 
 
 </mapper>

@@ -97,7 +97,7 @@
 				</c:if>					
 			<nav>
 				<ul>
-					<li><a href="#">갤러리 게시판</a></li>
+					<li><a href="galleryBoardPage.do">갤러리 게시판</a></li>
 					<li><a href="#">자유 게시판</a></li>				
 					<c:if test="${loginUser == null}">
 						<li><a href="loginPage.do">로그인</a></li>						

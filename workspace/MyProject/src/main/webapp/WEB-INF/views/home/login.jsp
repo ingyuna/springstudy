@@ -39,7 +39,7 @@
 		}
 		
 		.home_icon > a {
-			color: #6FF3A4;
+			color: #FC5DD5;
 		}
 		.outer {
 			width: 700px;
