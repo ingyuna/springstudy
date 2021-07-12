@@ -2,10 +2,10 @@
 <aop-reference-model>
 <aop-project name="14_FILE"/>
 <aop-project name="11_CONTACT"/>
-<aop-project name="06_MVC_REDIRECT"/>
 <aop-project name="ApplicationTest"/>
-<aop-project name="05_MVC_REQUEST"/>
+<aop-project name="06_MVC_REDIRECT"/>
 <aop-project name="MyProject"/>
+<aop-project name="05_MVC_REQUEST"/>
 <aop-project name="07_MVC_AJAX"/>
 <aop-project name="08_BOARD"/>
 <aop-project name="10_CONTACT"/>
@@ -13,11 +13,11 @@
 <aop-project name="13_CONTACT"/>
 <aop-project name="15_MEMBER"/>
 <aop-project name="17_SEARCH"/>
-<aop-project name="01_BEAN"/>
 <aop-project name="16_AJAX"/>
 <aop-project name="02_DI"/>
-<aop-project name="04_MVC_BEAN"/>
 <aop-project name="12_BOARD"/>
+<aop-project name="04_MVC_BEAN"/>
 <aop-project name="IntegrationProject"/>
 <aop-project name="09_BOARD"/>
+<aop-project name="TestProgram1"/>
 </aop-reference-model>

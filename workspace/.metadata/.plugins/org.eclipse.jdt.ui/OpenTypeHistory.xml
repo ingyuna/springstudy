@@ -1,15 +1,2 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<typeInfoHistroy>
-<typeInfo handle="=08_BOARD/src\/main\/java&lt;com.koreait.board01.command{BoardCommand.java[BoardCommand" modifiers="513" timestamp="1623823078453"/>
-<typeInfo handle="=09_BOARD/src\/main\/java&lt;com.koreait.board02.command{BoardCommand.java[BoardCommand" modifiers="513" timestamp="1623899470636"/>
-<typeInfo handle="=10_CONTACT/src\/main\/java&lt;com.koreait.contact01.command{ContactCommand.java[ContactCommand" modifiers="513" timestamp="1623979678480"/>
-<typeInfo handle="=12_BOARD/src\/main\/java&lt;com.koreait.board03.command{BoardCommand.java[BoardCommand" modifiers="513" timestamp="1624239747558"/>
-<typeInfo handle="=13_CONTACT/src\/main\/java&lt;com.koreait.contact03.command{ContactCommand.java[ContactCommand" modifiers="513" timestamp="1624342369276"/>
-<typeInfo handle="=14_FILE/src\/main\/java&lt;com.koreait.file.command{BoardCommand.java[BoardCommand" modifiers="513" timestamp="1624407522113"/>
-<typeInfo handle="=15_MEMBER/src\/main\/java&lt;com.koreait.member.command{MemberCommand.java[MemberCommand" modifiers="513" timestamp="1624504710869"/>
-<typeInfo handle="=16_AJAX/src\/main\/java&lt;com.koreait.ajax.command{MemberCommand.java[MemberCommand" modifiers="513" timestamp="1624851203542"/>
-<typeInfo handle="=17_SEARCH/src\/main\/java&lt;com.koreait.search.command{SearchCommand.java[SearchCommand" modifiers="513" timestamp="1624954691108"/>
-<typeInfo handle="=IntegrationProject/src\/main\/java&lt;com.koreait.integration.service{BoardService.java[BoardService" modifiers="513" timestamp="1625103544379"/>
-<typeInfo handle="=IntegrationProject/C:\/Users\/ITSC\/.m2\/repository\/org\/quartz-scheduler\/quartz\/2.3.0\/quartz-2.3.0.jar&lt;org.quartz(Job.class[Job" modifiers="1537" timestamp="1625098612580"/>
-<typeInfo handle="=MyProject/src\/main\/java&lt;com.koreait.myproject.command{HomeCommand.java[HomeCommand" modifiers="513" timestamp="1625193956991"/>
-</typeInfoHistroy>
+<typeInfoHistroy/>
