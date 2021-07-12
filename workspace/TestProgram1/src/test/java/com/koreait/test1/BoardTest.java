@@ -40,7 +40,7 @@ public class BoardTest {
 	public void selectTest() {
 		
 		BoardDAO boardDAO = SqlSession.getMapper(BoardDAO.class);
-		assertNotNull(BoardDAO.selectByIdx("654321"), "9999 글 번호는 없습니다.");
+		assertNotNull(BoardDAO.selectByIdx("9999"), "9999 글 번호는 없습니다.");
 	}
 	
 	
