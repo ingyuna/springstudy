@@ -4,7 +4,6 @@ INDEX VERSION 1.130+C:\spring0303_yn\springstudy\workspace\.metadata\.plugins\or
 1366731124.index
 2246565358.index
 2965065848.index
-3343173509.index
 133753815.index
 2664815123.index
 3601561833.index
